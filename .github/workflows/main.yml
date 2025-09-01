@@ -4,7 +4,7 @@
 #<https://stackoverflow.com/questions/64374179/how-to-push-to-another-repository-in-github-actions>
 #<https://stackoverflow.com/questions/41714882/git-how-to-clone-with-ssh-key-username>
 
-name: mkdocs-build
+name: EGR 304 Elisabeth Sabbagh Data Sheet
 
 on:
   push:
