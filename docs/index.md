@@ -16,4 +16,5 @@ resistor | controlling current
 power supply | voltage for the circuit
 
 1. plug in resistor
-2. plug in power supply
+2. plug in wires
+3. plug in power supply 
