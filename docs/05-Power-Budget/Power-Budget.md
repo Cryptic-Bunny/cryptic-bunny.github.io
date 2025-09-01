@@ -1,5 +1,5 @@
 ---
-title: Power Budget
+Power budget : Power Budget
 ---
 
 ## Overview
