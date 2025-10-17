@@ -56,7 +56,7 @@ title: Component Selection Example
 |                    | Cannot be ordered through Digi-Key                                   |
 
 **Choice: Parallax Inc. 28090**  
-**Rationale:** It is the only innate analog sensor out of the bunch, making it far more versatile. Its overall footprint and profile are better suited for the device being created.
+**Rationale:** It is the only innate analog sensor out of the bunch found meaning it is far more versatile. Along with that, its overall footprint and profile will work better for the device that needs to be created.
 
 ---
 
@@ -87,8 +87,7 @@ title: Component Selection Example
 | Small version of the first IC     |                                           |
 
 **Choice: Microchip Technology MCP6004T-I/OT**  
-**Rationale:** It's a readily available part handed out in EGR 304. The footprint is already made in KiCad, reducing PCB design effort. The 4 op amps allow for future system expansion.
-
+**Rationale:**The biggest deciding factor is that it's a readily available part, given that it was handed out to each student in the EGR 304 class. Along with that, the footprint for it is already made with Kicad, so there is less work that needs to be done when it comes to manufacturing a PCB with this part in mind. Lastly, because it contains 4 op amps, it means if more systems need to be added, there will be remaining slots for it.
 ---
 
 # Linear Voltage Regulator
@@ -129,7 +128,7 @@ title: Component Selection Example
 | Only needs 6.5 mA of current              |                   |
 
 **Choice: Same Sky PJ-102AH**  
-**Rationale:** Readily available from the EGR 304 kit. Footprint is pre-made in KiCad, simplifying PCB manufacturing.
+**Rationale:** The biggest deciding factor is that it's a readily available part, given that it was handed out to each student in the EGR 304 class. Along with that, the footprint for it is already made with Kicad, so there is less work that needs to be done when it comes to manufacturing a PCB with this part in mind.
 
 ---
 
@@ -170,7 +169,6 @@ title: Component Selection Example
 | Outputs 48 VDC 6 Amp              | Third pin not useful for PCB, adds extra drill hole |
 | Costs the same as PJ-102AH       | Uses a 5.5mm jack                                  |
 
-** Choice: Same Sky PJ-102AH**  
-**Rationale:** Readily available from the EGR 304 kit and compatible with the wall plug provided in class.            |
-    | Meets surface mount constraint of project |
+**Choice: Same Sky PJ-102AH**  
+**Rationale:** The biggest deciding factor is that it's a readily available part, given it was handed out to each student in the EGR 304 class. Along with that, it works with the wall plug we were given in class. 
 
