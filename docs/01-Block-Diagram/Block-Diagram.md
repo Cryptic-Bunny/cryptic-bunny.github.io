@@ -6,4 +6,4 @@ tags:
 ---
 
 ## Individual Block Diagram 
-![Indivial Block diagram ](Lis-individual.jpg)
+![Indivial Block diagram ](Lisindvidual.drawio.png)
