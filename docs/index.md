@@ -5,16 +5,8 @@ tags:
 - tag2
 ---
 
-## Hello welcome in (this is all nonesense to get used to working with this program)
+## Welcome in
+Team 208: JECK
+Team memeber: Elisabeth Sabbagh
 
-* Resistor, wire
-* power supply, connectors
-
-Item | Use
----- | ----
-resistor | controlling current
-power supply | voltage for the circuit
-
-1. plug in resistor
-2. plug in wires
-3. plug in power supply 
+My subsystem was tasked with detecting any water in the area where the device is set. This website will expand what the design process for this subsystem along with the rationale followed during this process.
