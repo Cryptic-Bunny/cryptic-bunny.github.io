@@ -56,7 +56,7 @@ title: Component Selection Example
 |                    | Cannot be ordered through Digi-Key                                   |
 
 **Choice: Parallax Inc. 28090**  
-**Rationale:** It is the only innate analog sensor out of the bunch found meaning it is far more versatile. Along with that, its overall footprint and profile will work better for the device that needs to be created.
+**Rationale:** It is the only innate analog sensor out of the bunch found meaning it is far more versatile. Along with that, its overall footprint and profile will work better for the device that needs to be created. That said the sensor itself will be modify upon delivery to still fit within the class restrictions of no active components.
 
 ---
 
