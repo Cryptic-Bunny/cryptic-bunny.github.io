@@ -1,5 +1,5 @@
 ---
-title: Schematic
+title: Schematic & PCB
 ---
 
 ## Overview
@@ -7,6 +7,10 @@ title: Schematic
 This schematic is design to support a analog water level sesnor, amplify its signal, and then convert into digital to be sent off to a seperate board.
 
 
-![schematic](v4.png)
+![schematic](Schematic.png)
 
-The schematic as a PDF download is available [*here*](FInaldesign.pdf), and the Zip folder of the project [*here*](FInaldesign.zip).
+The schematic as a PDF download is available [*here*](ElisabethSabbagh208.pdf)
+
+![PCB](PCB.png)
+
+The PCB as a pdf download is available  [*here*](PCBElisabethsabbagh208.pdf) And the zip file for the whole project is [*here*](ElisabethNSabbagh208.zip)
