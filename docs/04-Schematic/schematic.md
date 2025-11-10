@@ -9,8 +9,8 @@ This schematic is design to support a analog water level sesnor, amplify its sig
 
 ![schematic](Schematic.png)
 
-The schematic as a PDF download is available [*here*](ElisabethSabbagh208.pdf)
+The schematic as a PDF download is available [*here*](Final.pdf)
 
 ![PCB](PCB.png)
 
-The PCB as a pdf download is available  [*here*](PCBElisabethsabbagh208.pdf) Along with the zip file for the whole project [*here*](ElisabethNSabbagh208.zip). And finally the Gerber and Drill files for the PCB [*here*](ENSGerber208.zip).
+The PCB as a pdf download is available  [*here*](Finalpcb.pdf) Along with the zip file for the whole project [*here*](ElisabethNSabbagh208.zip). And finally the Gerber and Drill files for the PCB [*here*](ENSGerber208.zip).
