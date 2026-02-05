@@ -6,19 +6,11 @@ tags:
 ---
 
 ## Overview
-This needs to be updated with a brief purpose for having the block diagram.
-Things to mention are:
-* power levels
-* sensor
-* Actuator
-* team connections
-* Power source
-* ...
+This block diagram is a basic overveiw of the connection needed for my subsystem. It works as a clearly visualization of what is on the board then just the raw PCB.
 
-To get some initial formatting help, one can view ["here"](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/Appendix/basic-markdown-examples/) some basic techniques.
+My subsystem includes a sesnor, along with a pic microcontroller for I2c comunication. Along side that, it is powered by a dc wall power supply that is rated for 12 volts, that is then lowered to 3.3v with a switching regulator. Lastly, there is a uart connection to a esp 32 for wifi transmissions.
 
 
-## Example Block Diagram 
-Showing an example of how to import a screenshot of the block diagram created outside of git and brought into a page.
+## Example Block Diagram
 
-![Example of Indivial Block diagram ](individual-block-diagram.png)
+![Example of Indivial Block diagram ](Blockdiagram1.drawio.png)
