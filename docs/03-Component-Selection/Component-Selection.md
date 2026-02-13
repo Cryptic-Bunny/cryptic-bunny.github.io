@@ -8,6 +8,8 @@ title: Module's Selected Major Components
 
 1. **LM2575D2T-3.3R4G**
 
+![](1.webp)
+
 · $2.16 per unit  
 · [Link to product](https://www.digikey.com/en/products/detail/onsemi/LM2575D2T-3-3R4G/1476688)
 
@@ -21,6 +23,8 @@ title: Module's Selected Major Components
 
 2. AP63203WU-7
 
+![](2.webp)
+
 · $0.71  
 · [Link to product](https://www.digikey.com/en/products/detail/diodes-incorporated/AP63203WU-7/9858426)
 
@@ -33,6 +37,8 @@ title: Module's Selected Major Components
 ---
 
 3. **ADP2108AUJZ-3.3-R7**
+
+![](3.webp)
 
 · $2.44  
 · [Link to product](https://www.digikey.com/en/products/detail/analog-devices-inc/ADP2108AUJZ-3-3-R7/2042669)
@@ -53,6 +59,8 @@ Rationale: I am choosing the LM2575 for a few reasons. First, it is a low-freque
 
 1. **ICP-20100**
 
+![](4.webp)
+
 · $2.92  
 · [Link to product](https://www.digikey.com/en/products/detail/tdk-invensense/ICP-20100/16379591)
 · $14.00  
@@ -68,6 +76,8 @@ Rationale: I am choosing the LM2575 for a few reasons. First, it is a low-freque
 
 2. **ICP-10111**
 
+![](5.jpg)
+
 · $2.70  
 · [Link to product](https://www.digikey.com/en/products/detail/tdk-invensense/ICP-10111/9555753)  
 · $14.00  
@@ -80,6 +90,8 @@ Rationale: I am choosing the LM2575 for a few reasons. First, it is a low-freque
 ---
 
 3. **PSD0401120**
+   
+![](6.jpg)
 
 · $6.78  
 · [Link to product](https://www.digikey.com/en/products/detail/pui-audio-inc/PSD0401120/25575516)
@@ -94,6 +106,8 @@ Rationale: I am choosing the LM2575 for a few reasons. First, it is a low-freque
 # Power Supply
 
 1. **Same Sky PJ-102AH**
+   
+![](7.webp)
 
 · $0.76  
 · [Link to product](https://www.digikey.com/en/products/detail/cui-devices/PJ-102AH/408448)
@@ -107,6 +121,8 @@ Rationale: I am choosing the LM2575 for a few reasons. First, it is a low-freque
 ---
 
 2. **Same Sky PJ-002B**
+   
+![](8.jpg)
 
 · $0.52  
 · [Link to product](https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/PJ-002B/96965)
@@ -119,6 +135,8 @@ Rationale: I am choosing the LM2575 for a few reasons. First, it is a low-freque
 ---
 
 3. **Tensility International Corp 54-00127**
+   
+![](9.jpg)
 
 · $0.76  
 · [Link to product](https://www.digikey.com/en/products/detail/tensility-international-corp/54-00127/9685436)
