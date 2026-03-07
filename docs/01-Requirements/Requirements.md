@@ -3,7 +3,7 @@ title: Module's Requirements
 ---
 
 ## Module Requirements
-The following sections document the requirements that the this module need to fulfills to .....
+The following sections document the requirements that the this module need to fulfills to successfully work with the rest of the system as a whole.
 
 | **Requirement Description** | **Measure of<br> Threshold** | **Target<br>Measure** |**Stretch<br>Requirement<br>(Y-N)**|
 |-----------------------------| ----------------- | ----------------- | :-----: |
