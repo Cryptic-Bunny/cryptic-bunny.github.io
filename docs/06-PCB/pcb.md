@@ -8,7 +8,7 @@ This pcb is designed to support a pressure sensor. Along with passing the data a
 
 
 ![schematic](ENSpcb314.png){style width:"350" height:"300;"}
-**Figure 1** The schematic.
+**Figure 1** The pcb.
 
 
 ## Resouces
