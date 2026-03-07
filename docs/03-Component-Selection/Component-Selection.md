@@ -161,3 +161,9 @@ Rationale: The J-102AH is the chosen option for a few simple reasons. In additio
 # Microcontroller
 
 **Choice: Esp-32**
+
+# Power Budget
+
+The power budget below was made to help decide how high of a fuse should be used when it comes protecting the pcb's contents. Wanting to be on the safe side in case it need more then 750 miliamps, I decided on using a 1 amp fuse.
+
+![](Powerensegr315.png)
