@@ -10,6 +10,6 @@ The bill of material's for my subsystem
 
 ## Bill of Materials (Example as Image)
 ![](BOMEnsegr314.png)
-**Figure ##:** Bill of Materials
+**Figure 1:** Bill of Materials
 
 The Bill of Material as a PDF download is available [*here*](BOM_ENS_EGR314.pdf).
