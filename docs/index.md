@@ -7,7 +7,7 @@ tags:
 <center>
 <font size= "6"> Elisabeth N Sabbagh Datasheet</font><br>
 as part of<br>
-<font size= "8"> Project Name</font><br>
+<font size= "8"> Submersible Exploration device</font><br>
 for<br>
 <font size= "5"> Team 307 </font><br>
 
@@ -16,18 +16,12 @@ for<br>
 
 ## Introduction
 
-* **This needs to be updated so that a reader gets an idea of the purpose of this datasheet.**
+This is my personal data sheet going over what my subsystem in specifc does for team 307.
 
 ### Project Summary
 
-* This needs to be updated to reflect <ins>your version</ins> of the team project, so when shared not via the team's report, the reader gets an idea of the direction of the project and how your work will contribute to the overall success.
-* Add context that ties into the link to your [team report.](https://egr-314-team-307-spring-2026.github.io/Team307.github.io/)
+Our team is dedicated to creating a submersible drone that can explore underwater areas and collect data using a wide range of sensors. Along with that, the device will send this data back to users, or display it on a built in oled. A full overveiw of the project can be seen on the [team report.](https://egr-314-team-307-spring-2026.github.io/Team307.github.io/)
 
 ### My Contribution
 
-* This needs to be updated to reflect a team introduction
-* Content should also help an unfamiliar reader navigate to areas of interest. Information like:
-
-To review the details listed of the material used to construct the subsection, you can review it in the ["BOM"](https://embedded-systems-design.github.io/EGR314DataSheetTemplate/04-BOM/BOM/) section of the datasheet.
-
->Continue for all the remaining/missing sections.
+My subsystem within the device is set up with a pressure sensor to give live updates of the pressure in the surrounding area.
