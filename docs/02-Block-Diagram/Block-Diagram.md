@@ -11,6 +11,6 @@ This block diagram is a basic overveiw of the connection needed for my subsystem
 My subsystem includes a sesnor, along with a pic microcontroller for I2c comunication. Along side that, it is powered by a dc wall power supply that is rated for 12 volts, that is then lowered to 3.3v with a switching regulator. Lastly, there is a uart connection to a esp 32 for wifi transmissions.
 
 
-## Example Block Diagram
+## Block Diagram
 
-![Example of Indivial Block diagram ](Blockdiagram1.drawio.png)
+![Indivial Block diagram ](ENSBlockegr314.drawio.png)
