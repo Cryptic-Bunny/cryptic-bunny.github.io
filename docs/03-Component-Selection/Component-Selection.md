@@ -162,6 +162,8 @@ Rationale: The J-102AH is the chosen option for a few simple reasons. In additio
 
 **Choice: Esp-32**
 
+Rationale: The reason I am going with the ESP-32 over a Pic microchip comes down primarily to the coding. While MPXLab is nice, over the course of EGR 314, it has seen a lot of issue's making using it a difficult choice. Along side that, for the final project I'd only need to use 9 of the pins on the ESP, meaning the others on the board could be rerouted to debug if needed. Alongside that, the ICP-20100 is compatible with the ESP through using the I2C comunication functions of the microcontroller. Continuing on, the microcotnroller also has UART subsystem's allowing it to communicate with the other subsystems within my group. Lastly the ESP-32 is something that has a lot of support in the form of forum posts, that make solving issues easier as others likely have ran into them before. 
+
 # Power Budget
 
 The power budget below was made to help decide how high of a fuse should be used when it comes protecting the pcb's contents. Wanting to be on the safe side in case it need more then 750 miliamps, I decided on using a 1 amp fuse.
