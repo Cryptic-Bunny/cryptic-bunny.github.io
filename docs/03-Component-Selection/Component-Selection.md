@@ -101,6 +101,10 @@ Rationale: I am choosing the LM2575 for a few reasons. First, it is a low-freque
 | Small footprint | Soldering is harder cause it's small |
 | Good documentation | |
 
+### **Choice: ICP-20100**
+
+Rationale: All three sensors shown would do a good job of fulfilling the task. As such, when choosing ICP-20100, it mostly came down to its documentation and the device's recency. As such, it is the newest sensor out of the bunch. Along with that, the ability to order a breakout board for the sensor itself, which is 2mmx2mm, also made it the best pick. Lastly, the sensor itself includes I3C communication, which, while not usable with the ESP-32, would make it usable on microcontrollers with that protocol if the final subsystem were to be upgraded in the future.
+
 ---
 
 # Power Supply
