@@ -26,7 +26,7 @@
 
     
       
-        <title>Api - EGR 314 Elisabeth N Sabbagh Data Sheet</title>
+        <title>Indvidual Api - EGR 314 Elisabeth N Sabbagh Data Sheet</title>
       
     
     
@@ -90,7 +90,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#title-indvidual-api" class="md-skip">
+        <a href="#message-type-1-set-motor-command" class="md-skip">
           Skip to content
         </a>
       
@@ -125,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Api
+              Indvidual Api
             
           </span>
         </div>
@@ -782,53 +782,18 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Api
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Api
+    Indvidual Api
   </span>
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-      
-        <li class="md-nav__item">
-  <a href="#title-indvidual-api" class="md-nav__link">
-    <span class="md-ellipsis">
-      title: Indvidual Api
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -915,23 +880,8 @@
   
   
   
+    
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-      
-        <li class="md-nav__item">
-  <a href="#title-indvidual-api" class="md-nav__link">
-    <span class="md-ellipsis">
-      title: Indvidual Api
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -954,16 +904,389 @@
   
 
 
-  <h1>Api</h1>
+<h1 id="message-type-1-set-motor-command">Message type 1 - Set motor Command</h1>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Byte 1</th>
+<th>Byte 2</th>
+<th>Byte 3-4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variable Name</td>
+<td>Message type</td>
+<td>Direction</td>
+<td>Speed</td>
+</tr>
+<tr>
+<td>Variable Type</td>
+<td>Uint8_t</td>
+<td>Uint8_t</td>
+<td>Uint16_t</td>
+</tr>
+<tr>
+<td>Min Value</td>
+<td>0</td>
+<td>0</td>
+<td>-100</td>
+</tr>
+<tr>
+<td>Max Value</td>
+<td>12</td>
+<td>360</td>
+<td>100</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>1</td>
+<td>180</td>
+<td>50</td>
+</tr>
+</tbody>
+</table>
+<h1 id="message-type-2-motor-status">Message type 2 - Motor status</h1>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Byte 1</th>
+<th>Byte 2</th>
+<th>Byte 3-4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variable Name</td>
+<td>Message type</td>
+<td>Motor state</td>
+<td>Speed</td>
+</tr>
+<tr>
+<td>Variable Type</td>
+<td>Uint8_t</td>
+<td>Uint8_t</td>
+<td>Uint16_t</td>
+</tr>
+<tr>
+<td>Min Value</td>
+<td>0</td>
+<td>0</td>
+<td>-100</td>
+</tr>
+<tr>
+<td>Max Value</td>
+<td>12</td>
+<td>1</td>
+<td>100</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>2</td>
+<td>1</td>
+<td>50</td>
+</tr>
+</tbody>
+</table>
+<h2 id="message-type-3-distance-from-any-objects">Message type 3 - Distance from any objects</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Byte 1</th>
+<th>Byte 2-3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variable Name</td>
+<td>Message type</td>
+<td>Distance</td>
+</tr>
+<tr>
+<td>Variable Type</td>
+<td>Uint8_t</td>
+<td>Uin8_t</td>
+</tr>
+<tr>
+<td>Min Value</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Max Value</td>
+<td>12</td>
+<td>100</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>3</td>
+<td>46</td>
+</tr>
+</tbody>
+</table>
+<h1 id="message-type-4-hall-effect-sensor-value">Message type 4 - Hall effect sensor value</h1>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Byte 1</th>
+<th>Byte 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variable Name</td>
+<td>Message type</td>
+<td>Hall Value</td>
+</tr>
+<tr>
+<td>Variable Type</td>
+<td>Uint8_t</td>
+<td>Uint8_t</td>
+</tr>
+<tr>
+<td>Min Value</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Max Value</td>
+<td>12</td>
+<td>360</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>4</td>
+<td>180</td>
+</tr>
+</tbody>
+</table>
+<h1 id="message-type-5-pressure">Message type 5 - Pressure</h1>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Byte 1</th>
+<th>Byte 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variable Name</td>
+<td>Message type</td>
+<td>Pressure</td>
+</tr>
+<tr>
+<td>Variable Type</td>
+<td>Uint8_t</td>
+<td>Uint8_t</td>
+</tr>
+<tr>
+<td>Min Value</td>
+<td>0</td>
+<td>30</td>
+</tr>
+<tr>
+<td>Max Value</td>
+<td>12</td>
+<td>110</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>5</td>
+<td>104</td>
+</tr>
+</tbody>
+</table>
+<h1 id="message-type-6-temperature">Message type 6 - Temperature</h1>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Byte 1</th>
+<th>Byte 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variable Name</td>
+<td>Message type</td>
+<td>Temprature</td>
+</tr>
+<tr>
+<td>Variable Type</td>
+<td>Uint8_t</td>
+<td>Uint8_t</td>
+</tr>
+<tr>
+<td>Min Value</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Max Value</td>
+<td>12</td>
+<td>300</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>6</td>
+<td>80</td>
+</tr>
+</tbody>
+</table>
+<h1 id="message-types-7-and-8">Message types 7 and 8</h1>
+<p>These two message types, for the most part, will just be ignored by my subsystem as they have
+no bearing on the pressure sensor, and the people who need them will get the messages before
+my subsystem.</p>
+<h2 id="message-type-9-status-request">Message type 9 - Status request</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Byte 1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variable Name</td>
+<td>Message type</td>
+</tr>
+<tr>
+<td>Variable Type</td>
+<td>Uint8_t</td>
+</tr>
+<tr>
+<td>Min Value</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Max Value</td>
+<td>12</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>9</td>
+</tr>
+</tbody>
+</table>
+<h2 id="message-type-10-status-response">Message type 10 - Status response</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Byte 1</th>
+<th>Byte 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variable Name</td>
+<td>Message type</td>
+<td>Status code</td>
+</tr>
+<tr>
+<td>Variable Type</td>
+<td>Uint8_t</td>
+<td>Uint8_t</td>
+</tr>
+<tr>
+<td>Min Value</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Max Value</td>
+<td>12</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>10</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="message-type-11-error-code">Message type 11 - Error code</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Byte 1</th>
+<th>Byte 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variable Name</td>
+<td>Message type</td>
+<td>Error Code</td>
+</tr>
+<tr>
+<td>Variable Type</td>
+<td>Uint8_t</td>
+<td>Uint8_t</td>
+</tr>
+<tr>
+<td>Min Value</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Max Value</td>
+<td>12</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>11</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="message-type-12-emergency-stop">Message type 12 - Emergency stop</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Byte 1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variable Name</td>
+<td>Message type</td>
+</tr>
+<tr>
+<td>Variable Type</td>
+<td>Uint8_t</td>
+</tr>
+<tr>
+<td>Min Value</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Max Value</td>
+<td>12</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>12</td>
+</tr>
+</tbody>
+</table>
 
-<hr>
-<h2 id="title-indvidual-api">title: Indvidual Api</h2>
 
 
 
 
 
 
+  
+  
 
 
 
