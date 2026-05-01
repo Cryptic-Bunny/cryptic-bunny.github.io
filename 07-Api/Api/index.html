@@ -90,7 +90,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#message-type-1-set-motor-command" class="md-skip">
+        <a href="#message-type-6-pressure" class="md-skip">
           Skip to content
         </a>
       
@@ -904,380 +904,34 @@
   
 
 
-<h1 id="message-type-1-set-motor-command">Message type 1 - Set motor Command</h1>
+<p>Team 307's message protocol is as follows. The first and second bytes of every message sent through the UART will be 'AZ'. Followed by a third byte, the sender ID, which is just the sender's capitalized initial. The fourth is the receiver ID, the receiver's capitalized initial. The following bytes contain data defined by the types in the section below. Then the end of the message will be two bytes that write out 'YB'. Additionally, no messages will exceed 64 bytes.</p>
+<p>An example of a message I will send out is "AZEAHelloYB".</p>
+<p>The list of sender/receiver IDs is "A, D, E, G, J, and Z." With being my specific Sender ID.</p>
+<h1 id="message-type-6-pressure">Message type 6 - Pressure</h1>
+<p>Message type 6 as specificed in the team data sheet will be the only message I send. </p>
 <table>
 <thead>
 <tr>
-<th></th>
-<th>Byte 1</th>
-<th>Byte 2-3</th>
-<th>Byte 4-5</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Variable Name</td>
-<td>Message type</td>
-<td>Direction</td>
-<td>Speed</td>
-</tr>
-<tr>
-<td>Variable Type</td>
-<td>Uint8_t</td>
-<td>Uint16_t</td>
-<td>Uint16_t</td>
-</tr>
-<tr>
-<td>Min Value</td>
-<td>0</td>
-<td>0</td>
-<td>-100</td>
-</tr>
-<tr>
-<td>Max Value</td>
-<td>12</td>
-<td>360</td>
-<td>100</td>
-</tr>
-<tr>
-<td>Example</td>
-<td>1</td>
-<td>180</td>
-<td>50</td>
-</tr>
-</tbody>
-</table>
-<h1 id="message-type-2-motor-status">Message type 2 - Motor status</h1>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Byte 1</th>
-<th>Byte 2</th>
-<th>Byte 3-4</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Variable Name</td>
-<td>Message type</td>
-<td>Motor state</td>
-<td>Speed</td>
-</tr>
-<tr>
-<td>Variable Type</td>
-<td>Uint8_t</td>
-<td>Uint8_t</td>
-<td>Uint16_t</td>
-</tr>
-<tr>
-<td>Min Value</td>
-<td>0</td>
-<td>0</td>
-<td>-100</td>
-</tr>
-<tr>
-<td>Max Value</td>
-<td>12</td>
-<td>1</td>
-<td>100</td>
-</tr>
-<tr>
-<td>Example</td>
-<td>2</td>
-<td>1</td>
-<td>50</td>
-</tr>
-</tbody>
-</table>
-<h2 id="message-type-3-distance-from-any-objects">Message type 3 - Distance from any objects</h2>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Byte 1</th>
-<th>Byte 2-3</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Variable Name</td>
-<td>Message type</td>
-<td>Distance</td>
-</tr>
-<tr>
-<td>Variable Type</td>
-<td>Uint8_t</td>
-<td>Uin8_t</td>
-</tr>
-<tr>
-<td>Min Value</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td>Max Value</td>
-<td>12</td>
-<td>100</td>
-</tr>
-<tr>
-<td>Example</td>
-<td>3</td>
-<td>46</td>
-</tr>
-</tbody>
-</table>
-<h1 id="message-type-4-hall-effect-sensor-value">Message type 4 - Hall effect sensor value</h1>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Byte 1</th>
+<th>Byte 1–2</th>
 <th>Byte 3</th>
+<th>Byte 4</th>
+<th>Byte 5-62</th>
+<th>Last 2 Bytes</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Variable Name</td>
-<td>Message type</td>
-<td>Hall Value</td>
-</tr>
-<tr>
-<td>Variable Type</td>
-<td>Uint8_t</td>
-<td>Uint16_t</td>
-</tr>
-<tr>
-<td>Min Value</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td>Max Value</td>
-<td>12</td>
-<td>360</td>
-</tr>
-<tr>
-<td>Example</td>
-<td>4</td>
-<td>180</td>
+<td>AZ</td>
+<td>E</td>
+<td>A</td>
+<td>Depth and pressure</td>
+<td>YB</td>
 </tr>
 </tbody>
 </table>
-<h1 id="message-type-5-pressure">Message type 5 - Pressure</h1>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Byte 1</th>
-<th>Byte 2</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Variable Name</td>
-<td>Message type</td>
-<td>Pressure</td>
-</tr>
-<tr>
-<td>Variable Type</td>
-<td>Uint8_t</td>
-<td>Uint8_t</td>
-</tr>
-<tr>
-<td>Min Value</td>
-<td>0</td>
-<td>30</td>
-</tr>
-<tr>
-<td>Max Value</td>
-<td>12</td>
-<td>110</td>
-</tr>
-<tr>
-<td>Example</td>
-<td>5</td>
-<td>104</td>
-</tr>
-</tbody>
-</table>
-<h1 id="message-type-6-temperature">Message type 6 - Temperature</h1>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Byte 1</th>
-<th>Byte 2-3</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Variable Name</td>
-<td>Message type</td>
-<td>Temprature</td>
-</tr>
-<tr>
-<td>Variable Type</td>
-<td>Uint8_t</td>
-<td>Uint16_t</td>
-</tr>
-<tr>
-<td>Min Value</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td>Max Value</td>
-<td>12</td>
-<td>300</td>
-</tr>
-<tr>
-<td>Example</td>
-<td>6</td>
-<td>80</td>
-</tr>
-</tbody>
-</table>
-<h1 id="message-types-7-and-8">Message types 7 and 8</h1>
-<p>These two message types, for the most part, will just be ignored by my subsystem as they have
-no bearing on the pressure sensor, and the people who need them will get the messages before
-my subsystem.</p>
-<h2 id="message-type-9-status-request">Message type 9 - Status request</h2>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Byte 1</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Variable Name</td>
-<td>Message type</td>
-</tr>
-<tr>
-<td>Variable Type</td>
-<td>Uint8_t</td>
-</tr>
-<tr>
-<td>Min Value</td>
-<td>0</td>
-</tr>
-<tr>
-<td>Max Value</td>
-<td>12</td>
-</tr>
-<tr>
-<td>Example</td>
-<td>9</td>
-</tr>
-</tbody>
-</table>
-<h2 id="message-type-10-status-response">Message type 10 - Status response</h2>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Byte 1</th>
-<th>Byte 2</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Variable Name</td>
-<td>Message type</td>
-<td>Status code</td>
-</tr>
-<tr>
-<td>Variable Type</td>
-<td>Uint8_t</td>
-<td>Uint8_t</td>
-</tr>
-<tr>
-<td>Min Value</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td>Max Value</td>
-<td>12</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Example</td>
-<td>10</td>
-<td>1</td>
-</tr>
-</tbody>
-</table>
-<h2 id="message-type-11-error-code">Message type 11 - Error code</h2>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Byte 1</th>
-<th>Byte 2</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Variable Name</td>
-<td>Message type</td>
-<td>Error Code</td>
-</tr>
-<tr>
-<td>Variable Type</td>
-<td>Uint8_t</td>
-<td>Uint8_t</td>
-</tr>
-<tr>
-<td>Min Value</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td>Max Value</td>
-<td>12</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Example</td>
-<td>11</td>
-<td>1</td>
-</tr>
-</tbody>
-</table>
-<h2 id="message-type-12-emergency-stop">Message type 12 - Emergency stop</h2>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Byte 1</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Variable Name</td>
-<td>Message type</td>
-</tr>
-<tr>
-<td>Variable Type</td>
-<td>Uint8_t</td>
-</tr>
-<tr>
-<td>Min Value</td>
-<td>0</td>
-</tr>
-<tr>
-<td>Max Value</td>
-<td>12</td>
-</tr>
-<tr>
-<td>Example</td>
-<td>12</td>
-</tr>
-</tbody>
-</table>
+<p>The depth and pressure byte itself will have specific minimums and maximums associated to them. Pressure will have a minimum value of 30000 Kilopascals to 110000 Kilopascals. Depth meanwhile will have a value minimum of 0 meters to a maximum of 40000 meters.</p>
+<h1 id="other-message-types">Other message types</h1>
+<p>My subsystem is able to recieve other message types from across the group and pass them along. It does nothing with the data outside of copying it and sending the copy.</p>
 
 
 
