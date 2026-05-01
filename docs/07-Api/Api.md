@@ -1,109 +1,22 @@
 ---
 title: Indvidual Api
 ---
+Team 307's message protocol is as follows. The first and second bytes of every message sent through the UART will be 'AZ'. Followed by a third byte, the sender ID, which is just the sender's capitalized initial. The fourth is the receiver ID, the receiver's capitalized initial. The following bytes contain data defined by the types in the section below. Then the end of the message will be two bytes that write out 'YB'. Additionally, no messages will exceed 64 bytes.
 
-# Message type 1 - Set motor Command
+An example of a message I will send out is "AZEAHelloYB".
 
-|  | Byte 1 | Byte 2-3 | Byte 4-5 |
-|---|---|---|---|
-| Variable Name | Message type | Direction | Speed |
-| Variable Type | Uint8_t | Uint16_t | Uint16_t |
-| Min Value | 0 | 0 | -100 |
-| Max Value | 12 | 360 | 100 |
-| Example | 1 | 180 | 50 |
+The list of sender/receiver IDs is "A, D, E, G, J, and Z." With being my specific Sender ID.
 
-# Message type 2 - Motor status
+# Message type 6 - Pressure
 
-|  | Byte 1 | Byte 2 | Byte 3-4 |
-|---|---|---|---|
-| Variable Name | Message type | Motor state | Speed |
-| Variable Type | Uint8_t | Uint8_t | Uint16_t |
-| Min Value | 0 | 0 | -100 |
-| Max Value | 12 | 1 | 100 |
-| Example | 2 | 1 | 50 |
+Message type 6 as specificed in the team data sheet will be the only message I send. 
 
-## Message type 3 - Distance from any objects
+| Byte 1–2 | Byte 3 | Byte 4 | Byte 5-62| Last 2 Bytes |
+|---------------------|------------------|----------------------|-----------|-----------|
+| AZ | E | A | Depth and pressure | YB |
 
-|  | Byte 1 | Byte 2-3 |
-|---|---|---|
-| Variable Name | Message type | Distance |
-| Variable Type | Uint8_t | Uin8_t |
-| Min Value | 0 | 0 |
-| Max Value | 12 | 100 |
-| Example | 3 | 46 |
+The depth and pressure byte itself will have specific minimums and maximums associated to them. Pressure will have a minimum value of 30000 Kilopascals to 110000 Kilopascals. Depth meanwhile will have a value minimum of 0 meters to a maximum of 40000 meters.
 
-# Message type 4 - Hall effect sensor value
+# Other message types
 
-|  | Byte 1 | Byte 3 |
-|---|---|---|
-| Variable Name | Message type | Hall Value |
-| Variable Type | Uint8_t | Uint16_t |
-| Min Value | 0 | 0 |
-| Max Value | 12 | 360 |
-| Example | 4 | 180 |
-
-# Message type 5 - Pressure
-
-|  | Byte 1 | Byte 2 |
-|---|---|---|
-| Variable Name | Message type | Pressure |
-| Variable Type | Uint8_t | Uint8_t |
-| Min Value | 0 | 30 |
-| Max Value | 12 | 110 |
-| Example | 5 | 104 |
-
-# Message type 6 - Temperature
-
-|  | Byte 1 | Byte 2-3 |
-|---|---|---|
-| Variable Name | Message type | Temprature |
-| Variable Type | Uint8_t | Uint16_t |
-| Min Value | 0 | 0 |
-| Max Value | 12 | 300 |
-| Example | 6 | 80 |
-
-# Message types 7 and 8
-
-These two message types, for the most part, will just be ignored by my subsystem as they have
-no bearing on the pressure sensor, and the people who need them will get the messages before
-my subsystem.
-
-## Message type 9 - Status request
-
-|  | Byte 1 |
-|---|---|
-| Variable Name | Message type |
-| Variable Type | Uint8_t |
-| Min Value | 0 |
-| Max Value | 12 |
-| Example | 9 |
-
-## Message type 10 - Status response
-
-|  | Byte 1 | Byte 2 |
-|---|---|---|
-| Variable Name | Message type | Status code |
-| Variable Type | Uint8_t | Uint8_t |
-| Min Value | 0 | 0 |
-| Max Value | 12 | 1 |
-| Example | 10 | 1 |
-
-## Message type 11 - Error code
-
-|  | Byte 1 | Byte 2 |
-|---|---|---|
-| Variable Name | Message type | Error Code |
-| Variable Type | Uint8_t | Uint8_t |
-| Min Value | 0 | 0 |
-| Max Value | 12 | 1 |
-| Example | 11 | 1 |
-
-## Message type 12 - Emergency stop
-
-|  | Byte 1 |
-|---|---|
-| Variable Name | Message type |
-| Variable Type | Uint8_t |
-| Min Value | 0 |
-| Max Value | 12 |
-| Example | 12 |
+My subsystem is able to recieve other message types from across the group and pass them along. It does nothing with the data outside of copying it and sending the copy.
